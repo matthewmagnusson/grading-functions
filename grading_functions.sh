@@ -3,6 +3,10 @@ get_file_lines(){
 
 }
 
+get_std_in(){
+   echo "$(cat)"
+}
+
 format_assert_error(){
     echo Expected $1 Got $2
 }
