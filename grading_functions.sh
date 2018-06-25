@@ -9,8 +9,9 @@ format_assert_error(){
 
 assert_int_equals(){
    if [ "$1" -eq "$2" ]; then
-      echo true
+      echo true >OUTPUT
    else
+      echo false >OUTPUT
       format_assert_error $1 $2
    fi
 }
